@@ -216,12 +216,24 @@
                     </ul>
                 </nav>
         
-                <form class="footer__form"  action="https://formspree.io/f/xldrnoeo"method="POST">
-                    <h2 class="footer__newsletter">Dejanos tu correo</h2>
-                    <div class="footer__inputs">
-                        <input type="email" placeholder="Email:" class="footer__input" name="email">
-                        <input type="submit" value="Registrate" class="footer__submit">
-                    </div>
+                <form class="footer__form" action="https://formspree.io/f/xldrnoeo" method="POST">
+                        <label for="email"></label><br>
+                        <input type="email" id="email" name="email" placeholder="Dirección de correo" required><br><br>
+                        
+                        <label for="phone"></label><br>
+                        <input type="text" id="phone" name="phone" placeholder="Número de teléfono" required><br><br>
+                        
+                        <label for="subject"></label><br>
+                        <input type="text" id="subject" name="subject" placeholder="Tema"><br><br>
+                        
+                        <label for="message"></label><br>
+                        <textarea id="message" name="message" placeholder="Mensaje" required></textarea><br><br>
+                        
+                        <button type="submit">
+                            <span>Enviar</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div class="overlay"></div>
+                        </button>
                 </form>
             </section>
             <section class="footer__copy container">
